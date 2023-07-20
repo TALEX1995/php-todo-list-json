@@ -1,1 +1,27 @@
-["HTML","CSS","Laravel","Vue","PHP","Javascript"]
+[
+    {
+      "text": "HTML",
+      "id" : 1,
+      "completed" : "False"
+    },
+    {
+        "text": "CSS",
+        "id" : 2,
+        "completed" : "False"
+    },
+    {
+        "text": "PHP",
+        "id" : 3,
+        "completed" : "False"
+    },
+    {
+        "text": "Laravel",
+        "id" : 4,
+        "completed" : "False"
+    },
+    {
+        "text": "Javascript",
+        "id" : 5,
+        "completed" : "False"
+    }    
+]
