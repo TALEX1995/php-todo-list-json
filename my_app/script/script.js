@@ -7,7 +7,11 @@ const { createApp } = Vue
 
 // Initialize vue app
 const app = createApp({
-    
+    data () {
+        return {
+            tasks: ['HTML', 'CSS', 'Axios', 'Vue', 'PHP', 'Javascript'],
+        }
+    }
 
 
 });
