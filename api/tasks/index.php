@@ -15,8 +15,13 @@ $new_task = $_POST['task'] ?? null;
 
 // Add new task
 if ($new_task) {
-    $tasks[] = $new_task;
 
+    $rand_number = rand(6, 100000);
+    $tasks[] = [
+        "text" => $new_task,
+        "id" => $rand_number,
+        "completed" => "False"
+    ];
     // Add tasks array with new task in tasks.json
     $json_tasks = json_encode($tasks);
     file_put_contents($database_path, $json_tasks);
