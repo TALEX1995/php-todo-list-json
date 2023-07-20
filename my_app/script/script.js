@@ -9,7 +9,7 @@ const { createApp } = Vue
 const app = createApp({
     data () {
         return {
-            tasks: ['HTML', 'CSS', 'Axios', 'Vue', 'PHP', 'Javascript'],
+            tasks: [],
         }
     }
 
