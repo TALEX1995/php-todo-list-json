@@ -30,12 +30,20 @@ const app = createApp({
                 headers: {'Content-Type' : 'multipart/form-data'}
             }
 
-            axios.post('http://localhost:80/php-todo-list-json/api/tasks/', data, config)
+            axios.post('http://localhost/php-todo-list-json/api/tasks/', data, config)
             .then(res => {
                 this.tasks = res.data
                 this.newTask = ''
             })
-        }
+        },
+
+        toggleDoneTask (currentId) {
+            this.tasks.forEach((task) => {
+                if (task.id === currentId) {
+                    task.completed = !task.completed
+                }
+            })
+        },
     }
 });
 

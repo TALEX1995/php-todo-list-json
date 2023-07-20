@@ -13,6 +13,8 @@ $tasks = json_decode($json_data, true);
 // Check POST
 $new_task = $_POST['task'] ?? null;
 
+$task_completed = $_POST['completed'] ?? false;
+
 // Add new task
 if ($new_task) {
 
@@ -20,7 +22,7 @@ if ($new_task) {
     $tasks[] = [
         "text" => $new_task,
         "id" => $rand_number,
-        "completed" => "False"
+        "completed" => false
     ];
     // Add tasks array with new task in tasks.json
     $json_tasks = json_encode($tasks);

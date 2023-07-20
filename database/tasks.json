@@ -1,1 +1,1 @@
-[{"text":"HTML","id":1,"completed":"True"},{"text":"CSS","id":2,"completed":"False"},{"text":"PHP","id":3,"completed":"False"},{"text":"Laravel","id":4,"completed":"False"},{"text":"Javascript","id":5,"completed":"True"}]
+[{"text":"HTML","id":1,"completed":true},{"text":"CSS","id":2,"completed":false},{"text":"PHP","id":3,"completed":false},{"text":"Laravel","id":4,"completed":"false"},{"text":"Javascript","id":5,"completed":true},{"text":"Bootstrap","id":67164,"completed":false}]
