@@ -10,6 +10,14 @@ $json_data = file_get_contents($database_path);
 $tasks = json_decode($json_data, true);
 
 
+// Check POST
+$new_task = $_POST['task'] ?? null;
+
+// Add new task
+if ($new_task) {
+    $tasks[] = $new_task;
+}
+
 // Specific type file
 header('Content-Type: application/json');
 
